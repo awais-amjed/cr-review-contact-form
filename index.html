@@ -295,11 +295,11 @@
           <p class="contact-form-heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
           <form action="https://formspree.io/f/xrgjbnyl" method="post" class="contact-form">
             <div class="contact-form-name">
-              <input type="text" name="firstName" placeholder="First Name">
-              <input type="text" name="lastName" placeholder="Last Name">
+              <input type="text" name="firstName" placeholder="First Name" required>
+              <input type="text" name="lastName" placeholder="Last Name" required>
             </div>
-            <input type="text" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Write your message here" rows="7"
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" maxlength="500" placeholder="Write your message here" rows="7"
                       required></textarea>
             <input type="submit" class="link" value="Get In Touch">
           </form>
